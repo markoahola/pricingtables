@@ -1,0 +1,172 @@
+/* Demo Site Styling Rules (Delete these) */
+
+body {
+    background: #5F5E5E;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif; /* Add this to your current CSS if you want to use PT Sans Font */
+}
+
+.holder-area {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Start of Pricing Table Styling Rules (Do not delete below */
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-table * {
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-table {
+    width: 25%;
+    height: 70vh;
+    background: white;
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s;
+    flex: 1;
+}
+
+.pricing-table:hover {
+    -webkit-animation: pulse 0.3s;
+    animation: pulse 0.3s;
+    z-index: 1;
+    background: rgb(204, 255, 235);
+}
+
+.pricing-table:hover .buy {
+    background: rgb(32, 199, 88);
+}
+
+.plan-title {
+    width: 100%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #19E084, #61E2AB);
+    position: relative;
+}
+
+.best-seller {
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 245, 0, 0.8);
+}
+
+.best-seller p {
+    font-size: 0.7vw;
+    transform: rotate(-90deg);
+}
+
+.plan-title h3 {color: white; font-size: 4vh; font-weight: normal;}
+
+.title-two {
+    background-image: linear-gradient(to right, #61E2AB, #21A577);
+}
+.title-three {
+    background-image: linear-gradient(to right, #21A577, #5EAF89);
+}
+.title-four {
+    background-image: linear-gradient(to right, #5EAF89, #21AD23);
+}
+
+.price {
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(111, 214, 163, 0.6);
+    color: white;
+    font-size: 2.5vh;
+}
+
+.currency {
+    font-size: 1.8vh;
+    letter-spacing: 5px;
+}
+
+.feature-list {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.features {
+    width: 100%;
+    line-height: 4vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.buy {
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.9vh;
+    transition: 0.3s;
+    background: rgba(32, 199, 88, 0.6);
+    color: white;
+}
+
+.buy:focus {
+    border: 1px solid rgba(51, 204, 255);
+}
+
+.buy:hover {
+    -webkit-animation: pulse 0.5s;
+    animation: pulse 0.5s;
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .pricing-table {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+    }
+}
